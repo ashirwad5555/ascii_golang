@@ -1,0 +1,11 @@
+package main
+
+import (
+	"net/http"
+
+	ascii "golang_ascii_backend/internal/ascii"
+)
+
+func Handler(w http.ResponseWriter, r *http.Request) {
+	ascii.ConvertHandler(w, r)
+}
